@@ -1,0 +1,62 @@
+
+
+
+
+<form class="contact_form" onSubmit="ym('66529771','reachGoal', 'katalog');" name="order" method="post" action="send.php">
+  <div class="block_form">
+    <div class="left_block">
+      <div class="textArea">
+        Заполните форму, и мы вышлем Вам <br> подробный каталог в котором 150+ фигур и композиций
+      </div>
+      <div>
+        <input type="text" name="name" placeholder="Имя" required>
+      </div>
+      <div>
+        <input class="phone" type="tel" name="tel" placeholder="Телефон" required>
+      </div>
+      <input type="hidden" name="download" value="catalogDW">
+      <div class="flex__btn">
+        <button class="link" type="submit">Отправить заявку</button>
+      </div>
+      <p class="err"></p>
+    </div>
+    <div class="right_block">
+      <h2>Бачо  — <br> в своём деле мы лучшие</h2>
+    </div>
+  </div>
+</form> 
+
+
+<script>
+
+$('.phone').mask('+7 (999) 999-99-99').on('click', function () {
+    if ($(this).val() === '_ (___) ___-__-__') {
+        $(this).get(0).setSelectionRange(0, 0);
+    }
+  });
+
+
+  // let form = document.querySelector('.contact_form');
+  // let errorBox = document.querySelector('.err');
+
+  // form.addEventListern('submit', function(e){
+  //   e.preventDefault();
+
+  //   let formData = new FormData(form);
+
+  //   fetch('send.php', {
+  //      method: 'POST',
+  //      body: formData
+  //   })
+  //   .then(response => response.json())
+  //   .then(data => {
+  //     if(data.res){
+  //       form.innerHTML = 'Ваша заявка отпрвленна!';
+  //     }
+  //     else{
+  //       errorBox.innerHTML = data.error;
+  //     }
+  //   })
+  // })
+
+</script>

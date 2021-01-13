@@ -1,0 +1,27 @@
+<form class="callBackForm" style="background-image: url('/img/form_bg.jpg'); display: none;" id="CB_Short">
+  <div class="contain">
+    <div class="title">Закажите обратный звонок </div>
+    <input type="hidden" value="Заказать звонок" name="name_form">
+    <input type="hidden" value="20" name="id_block"> <!--id инфоблока формы -->
+    <input type="hidden" value="12" name="message_template_id"> <!--id почтового шаблона -->
+    <div class="inputBlock">
+      <input type="text" name="name" id="callBacBlock-name" placeholder="Имя " required>
+    </div>
+    <div class="inputBlock">
+      <input type="tel" name="tel" id="callBacBlock-tel" placeholder="Псс, телефончик " required>
+      <input id="callBacBlock--submit" type="submit" class="link link--submit link--inside" value="Заказать" />
+    </div>
+    
+  </div>
+  <div class="politic">Отправляя данные, вы принимаете <a data-fancybox="" data-src="/politik.php" data-type="ajax" href="javascript:;">политику конфиденциальности</a> </div>
+</form>
+
+
+<script>
+  let inputs = document.querySelectorAll('input[type="tel"]');
+  let im = new Inputmask('+7 (999) 999-99-99');
+  im.mask(inputs);
+</script>
+<!-- <script src="just-validate.min.js"></script>
+<script src="inputmask.min.js"></script>
+<script src="common.js"></script> -->
