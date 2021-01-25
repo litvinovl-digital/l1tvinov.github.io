@@ -8,7 +8,7 @@ body{
   max-width: 1360px;
   margin: 0 auto;
   padding-left: 30px;
-    padding-right: 30px;
+  padding-right: 30px;
 }
 .header {
   margin-top: 60px;
@@ -29,8 +29,10 @@ body{
 }
 .item {
   width: calc(25% - 40px);
-  margin: 0 20px;
+  margin: 20px;
 }
+
+
 
 .item-wrapper {
   display: block;
@@ -46,7 +48,7 @@ body{
   opacity: 0.6;
 }
 .item-wrapper:hover .item-description {
-  height: 54px;
+  height: 65px;
 }
 .item-overlay {
   display: block;
@@ -89,8 +91,11 @@ body{
   position: relative;
   color: #fff;
   background-color: #0065ff;
+  min-width: 130px;
+  text-align: center;
   border-radius: 5px;
   padding: 7px 14px;
+  white-space: nowrap;
 }
 .item-description {
   display: block;
@@ -103,3 +108,29 @@ body{
   font-size: 18px;
 }
 
+@media (max-width: 992px){
+  .items {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .item {
+  width: calc(50% - 20px);
+  margin: 10px;
+  }
+  .item-overlay {
+    opacity: 0.6;
+  }
+  .item-description {
+    height: 54px;
+  }
+}
+@media (max-width: 425px){
+  .items {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .item {
+    margin: 5px;
+  width: calc(100% - 10px);
+  }
+}
