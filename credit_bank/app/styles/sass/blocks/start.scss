@@ -26,11 +26,12 @@
 }
 .bgCart {
   background-size: contain;
+  background-repeat: no-repeat;
   max-width: 700px;
-  height: 760px;
+  height: 550px;
   width: 100%;
   position: absolute;
-  top: 0;
+  top: auto;
   background-position: right;
   z-index: -1;
 }
