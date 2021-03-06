@@ -26,17 +26,18 @@
 }
 .bgCart {
   background-size: contain;
-  background-repeat: no-repeat;
-  max-width: 1409px;
-  height: 897px;
+  max-width: 700px;
+  height: 760px;
   width: 100%;
   position: absolute;
   top: 0;
+  background-position: right;
   z-index: -1;
 }
 .advItems {
   display: flex;
   flex-wrap: wrap;
+  width: 290px;
 }
 .advItem {
   flex: 50%;
