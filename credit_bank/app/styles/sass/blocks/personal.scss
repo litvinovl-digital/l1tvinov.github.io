@@ -1,0 +1,52 @@
+.personal {
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  background-position: center;
+}
+.subtitleSection-personal {
+  line-height: 18px;
+  color: #ffffff;
+}
+.accent {
+  color: $accent;
+}
+.row-personal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 60px;
+}
+.imgWraper-personal {
+  width: calc(50% - 30px);
+  margin: 15px;
+
+  img {
+    width: 374px;
+    object-fit: contain;
+  }
+}
+.personalItems {
+  width: calc(50% - 30px);
+  margin: 15px;
+}
+.personalItem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  &__img {
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 18px;
+  }
+
+  &__text {
+    max-width: 200px;
+    color: #ffffff;
+  }
+}

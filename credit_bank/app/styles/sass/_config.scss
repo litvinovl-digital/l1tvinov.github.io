@@ -77,7 +77,15 @@ body{
 }
 
 .container {
-	max-width: 1008px;
+	max-width: 1040px;
 	margin: 0 auto;
 	padding: 0 15px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+section{
+	margin-bottom: 190px;
 }
