@@ -57,13 +57,10 @@ input, textarea{
 	&:focus:required:invalid{
 		border-color: red;
 	}
-		
 	&:required:valid{
 		border-color: green;
 	}
-		
 }
-	
 
 body{
 	font-family: $userfont;
@@ -88,4 +85,25 @@ img {
 }
 section{
 	margin-bottom: 190px;
+}
+
+.btn {
+  padding-top: 28px;
+	display: block;
+  padding-bottom: 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s;
+  background: $accent;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 114%;
+  text-align: center;
+  color: #ffffff;
+  width: 290px;
+  outline: none;
+  border: none;
+  &:hover {
+    background: darken($color: $accent, $amount: 25);
+  }
 }

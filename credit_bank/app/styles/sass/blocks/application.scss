@@ -1,0 +1,31 @@
+.application {
+  margin-bottom: 85px;
+}
+
+
+.appItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+.appItem {
+  width: calc(33% - 30px);
+  margin: 15px;
+  max-width: 255px;
+  &__numer {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: $accent;
+    margin: 0 auto;
+    span {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+
+  &__text {
+  }
+}
