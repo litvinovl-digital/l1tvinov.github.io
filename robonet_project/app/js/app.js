@@ -20,9 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         dots: false,
         nav: false,
-        
-        // autoplay: true,
-        // autoplayTimeout: 4000,
+        autoplay: true,
+        autoplayTimeout: 4000,
         items: 1,
     });
 
