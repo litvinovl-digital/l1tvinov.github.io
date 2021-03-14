@@ -5,7 +5,7 @@ $fontsize: 18px; // Body Font Size
 $textcolor: #4d4d4d; // Text Color
 $bacgraundcolor: #fff;
 $lineheight: 20px; // Document Line Height
-$userfont: roboto-oh5, sans-serif; // User Font Family
+$userfont: PT Sans Narrow, sans-serif; // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
@@ -32,7 +32,8 @@ $gutter: $grid-gutter-width;
 	
 	
 
-@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2');
+@include font('Verdana', normal, 400, '../fonts/Verdana.woff2');
+
 
 
 // GENERAL DOCUMENT STYLES
